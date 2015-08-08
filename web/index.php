@@ -63,7 +63,7 @@ $app->get('/', function () use ($app){
                 &nbsp; &nbsp;    margin-left: 5px;<br>
                 &nbsp; &nbsp;    margin-right: 5px; <br>
                     }
-                </csshelpers>For customization, use <a href="#docs-5">mixins</a>.<br>
+                </csshelpers>For customization, use <a href="#docs-5">mixins</a>.<br><br>
                 Of course, there are more horizontal spacers to set only left or right margins. There are classes for left margin:
                 <classcode>.l-spacer-5</classcode>,
                 <classcode>.l-spacer-10</classcode>,
@@ -135,7 +135,7 @@ $app->get('/', function () use ($app){
             'Disable cursor' => 'In the case of disable event of some area, that is overlaying something or you hiding it, use class
                 <classcode>.disable-pointer</classcode>. Here is how it works:
                 <csshelpers>
-                .disable-cursor {   <br>
+                <class>.disable-cursor</class> {   <br>
                 &nbsp; &nbsp;pointer-events: none; <br>
                 }
                 </csshelpers>
@@ -144,7 +144,7 @@ $app->get('/', function () use ($app){
                 For hiding elements, we prepared two different class. If you want hide some element, and remove it from DOM use
                 <classcode>.hide-absolute</classcode>. Here is the class definition:<br>
                 <csshelpers>
-                    .hide-absolute {   <br>
+                    <class>.hide-absolute </class> {   <br>
                     &nbsp; &nbsp;display: none;<br>
                     }
                 </csshelpers>
@@ -153,7 +153,7 @@ $app->get('/', function () use ($app){
                 Otherwise you can hide element visually and it still will be taking own place with class
                 <classcode>.hide</classcode>.
                 <csshelpers>
-                    .hide {   <br>
+                    <class>.hide</class> {   <br>
                     &nbsp; &nbsp;visibility: hidden;<br>
                     }
                 </csshelpers>
