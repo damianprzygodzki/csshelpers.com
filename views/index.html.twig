@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>csshelpers - css library to improve your work</title>
+    <link rel="stylesheet" href="/assets/css/scss/main.css">
+    <link rel="stylesheet" href="/assets/css/helpers.css">
+    <link rel="icon" href="/assets/img/logo.png" type="image/png">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta property="og:title" content="CSShelpers">
+    <meta property="og:description" content="Useful and light css library to improve and make Your work easier.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.csshelpers.com/">
+    <meta property="og:image" content="http://www.csshelpers.com/assets/img/facebook-image.png">
+    <meta property="og:image:type" content="image/png">
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=986827404694621";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+<section id="csshelpers-intro">
+<div class="v-container">
+    <div class="v-middle text-center">
+        <img src="assets/img/logo.png" class="logo">
+        <p class="title b-spacer-50"><span class="text-featured">css</span>helpers</p>
+        <p class="subtitle col-50 center">
+            Useful and light css library to improve and make Your work easier.
+            Includes class for positioning, vertical aligning and more.
+            Start developing websites with classes you always use.
+        </p>
+
+        <div class="ch-btn t-spacer-50 b-spacer-15 pointer" id="learn-more">Learn more</div>
+        <p><small><a href="#csshelpers-docs"> or go to documentation</a></small></p>
+    </div>
+</div>
+</section>
+<div class="version-bar">
+    <div class="container">
+        Current version is 1.0.
+        <p class="pull-right no-margin">
+            <a href="https://github.com/szaaman/csshelpers" target="_blank">Git repository</a> | <a href="">Bower repository</a>
+        </p>
+    </div>
+</div>
+<section class="full-screen-min" id="csshelpers-learn">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 v-spacer-30">
+                <h2>Learn more</h2>
+                <h5>
+                    The new approach to idea of creating Cascading Style Sheets. Csshelpers is free library including the most often used classes during frontend development. Library gives You classes defining margins, paddings, spacers called with intuitive names. In addition, csshelpers includes solution for simple vertical alignment or push the footer to the bottom of window.
+                </h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="assets/img/inline.png" class="img-responsive">
+                <h4>Post-implementation, prototyping, fixes.</h4>
+                <p>To be clear. You do not have use <span class="text-featured bold">csshelpers</span> everytime. This library delivers you solution for post-implementation, prototyping or fixing. </p>
+            </div>
+            <div class="col-sm-4">
+                <img src="assets/img/schema.png" class="img-responsive">
+                <h4>Be consistent. Take the scheme.</h4>
+                <p>Everyone loves consistancy. To sleep well, take the simplest scheme for number-things. <span class="text-featured bold">Csshelpers</span> gives you ultimate pattern for spacing and positioning or ability to do Your own scheme by mixins.</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="assets/img/schema.png" class="img-responsive">
+                <h4>Ninja-coding.</h4>
+                <p>It is not welcome to craft on the run, but sometimes is required. Lots of changes and reviews are hard to handle and need proper tools. Adjust Your design on live.</p>
+            </div>
+        </div>
+        <div class="spacer-100"></div>
+        <div class="row">
+            <div class="quote h-spacer-50 b-spacer-30">
+                <h4>Do you realize...</h4>
+                <p>Do you realize that we love Bootstrap and use it very often? Csshelpers can stand side-by-side with Bootstrap and that works cool. We know it, because we use it. Even here.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="csshelpers-docs">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+            <h2>Documentation</h2>
+            <h5>The main rule of improving work by csshelpers is to make it in the easiest possible way. The name of the classes are simple and clear, so you get used after first time. There is a list of available classnames and description for each of them. </h5>
+            <ul class="v-spacer-30">
+                {% for key,items in docs %}
+                <li>
+                    <a href="#docs-{{ loop.index }}">{{ loop.index }}. {{ key }}</a>
+                    <ul>
+                        {% for key,item in items %}
+                            <li><a href="#docs-{{ loop.parent.loop.index }}-{{ loop.index }}">{{ loop.parent.loop.index }}.{{ loop.index }}. {{ key }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endfor %}
+            </ul>
+            {% for key,items in docs %}
+                <div>
+                    <h3 id="docs-{{ loop.index }}">{{ loop.index }}. {{ key }}</h3>
+                    {% for key,item in items %}
+                        <h4 id="docs-{{ loop.parent.loop.index }}-{{ loop.index }}">{{ loop.parent.loop.index }}.{{ loop.index }}. {{ key }}</h4>
+                        <p>{{ item | raw }}</p>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<section id="csshelpers-download" class="b-spacer-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"><h2>Download</h2></div>
+            <div class="col-sm-4">
+                <h3>1. Raw CSS</h3>
+                <p>Here you have new version of minified and compiled css file.</p>
+                <p class="text-center v-spacer-20"><a href="https://github.com/csshelpers/csshelpers/raw/master/helpers.min.css" class="ch-btn">Download</a></p>
+            </div>
+            <div class="col-sm-4">
+                <h3>2. Bower</h3>
+                <p>You can download csshelpers using <a href="http://bower.io/" target="_blank">Bower</a>:</p>
+                <console> bower install csshelpers</console>
+            </div>
+            <div class="col-sm-4">
+                <h3>3. SASS source</h3>
+                <p>Here is source from master branch to download:</p>
+                <p class="text-center v-spacer-20"><a href="https://github.com/csshelpers/csshelpers/archive/master.zip" class="ch-btn">Download</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="v-container">
+        <div class="v-middle">
+            <div class="container">
+                &copy; 2015 www.csshelpers.com - <a href="www.damianprzygodzki.pl" target="_blank">damian przygodzki</a>
+                - if you want to ask, feel free - <a href="mailto: head@csshelpers.com">head@csshelpers.com</a>
+                <div class="fb-like pull-right" data-href="https://www.facebook.com/pages/CSS-helpers" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
