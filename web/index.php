@@ -31,7 +31,7 @@ $app->get('/', function () use ($app){
                 &nbsp; &nbsp;    margin-bottom: 5px; <br>
                     }
                 </csshelpers>If you want to set your own space, use <a href="#docs-5">mixins</a>.<br><br>
-                For more specified use, there are single side spacers set top margin:
+                For more specified use, there are single side spacers setting top margin:
                 <classcode>.t-spacer-5</classcode>,
                 <classcode>.t-spacer-10</classcode>,
                 <classcode>.t-spacer-15</classcode>,
@@ -82,9 +82,9 @@ $app->get('/', function () use ($app){
                 <classcode>.r-spacer-100</classcode>.
             ',
             'Resetting' => "
-                    You must be careful using this classes, because they are forcing settings of elements.
+                    You must be careful using those classes, because they are forcing settings of elements.
                     Mostly while fixing or in post-implementation you have to force some inherited styles
-                    in the least offensive way and here you've got reset class for margins
+                    in the least offensive way and here you have reset class for margins
                                                                                                                                                                                                                                                                                                                           <classcode>.no-margin</classcode> - it removes all the margins,
                     <classcode>.no-padding</classcode> - removes all the paddings and bunch of classes for single directions:
                     <classcode>.t-spacer-0</classcode>, <classcode>.b-spacer-0</classcode>,
@@ -93,12 +93,12 @@ $app->get('/', function () use ($app){
             ",
             'Full-screen' => '
                 Sometimes, in the responsive design it is needed to make element go full-screen. Class <classcode>.full-screen</classcode>
-                force element to size of Window Object. If you want to make element responsive to Window Object and itself content, class <classcode>.full-screen-min</classcode>
+                force element to size of Window Object. If you want to make element responsive to itself content too, class <classcode>.full-screen-min</classcode>
                 sets minimal size of Window Object and is able to streching with contents.',
         ),
         'Spacers' => array(
             'Spacer blocks' => '
-            If you want increase space between elements, you can insert there an empty block. For this use spacer class. It is block, 100% wide, with height depends of classname.
+            If you want increase space between elements, you can insert there an empty block. For this use spacer class. It is block, 100% wide, with height depending on classname.
                 <classcode>.spacer-5</classcode>,
                 <classcode>.spacer-10</classcode>,
                 <classcode>.spacer-15</classcode>,
@@ -132,7 +132,7 @@ $app->get('/', function () use ($app){
         ),
         'Utilities' => array(
             'Pointer' => 'Lots of cases requires to use different element as a button or link. Help user to recognize it properly with <classcode>.pointer</classcode> class. It sets pointer style cursor.',
-            'Disable cursor' => 'In the case of disable event of some area, that is overlaying something or you hiding it, use class
+            'Disable cursor' => 'If you want to disable events of some area, that is overlaying something, is transparent or you hiding it, use class
                 <classcode>.disable-pointer</classcode>. Here is how it works:
                 <csshelpers>
                 <class>.disable-cursor</class> {   <br>
@@ -176,7 +176,7 @@ $app->get('/', function () use ($app){
                 </csshelpers>
             ',
             'Spacer blocks' => '
-                Next customizable elements are spacers. The only one thing you have to do is define your distance. Here is mixin for spacer block.
+                Next customizable elements are spacers. The only thing you have to do is define your distance. Here is mixin for spacer block.
                 <csshelpers>
                 @mixin <class>spacer</class>($height) {<br>
                 &nbsp; &nbsp;  display: block;<br>
