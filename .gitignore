@@ -46,4 +46,5 @@
 
 # Backup entities generated with doctrine:generate:entities command
 */Entity/*~
->>>>>>> 139e7882e9129b9b4420136214a69e7674291033
+
+/bower_components/*
